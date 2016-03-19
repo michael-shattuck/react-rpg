@@ -1,0 +1,29 @@
+.root {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+}
+
+.player {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    background: url(../../common/sprites/characters.png);
+}
+
+.forward {
+    background-position: 0 0;
+}
+
+.backward {
+    background-position: 0 -96px;
+    z-index: 100;
+}
+
+.left {
+    background-position: 0 -32px;
+}
+
+.right {
+    background-position: 0 -64px;
+}

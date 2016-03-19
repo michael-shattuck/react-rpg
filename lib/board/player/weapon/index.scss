@@ -1,0 +1,30 @@
+.weapon {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    background: url(../../../common/sprites/items.png);
+    background-position: -10px -152px;
+}
+
+.forward {
+    top: 30px;
+    transform: rotate(135deg);
+}
+
+.backward {
+    top: -22px;
+    z-index: 1;
+    transform: rotate(315deg);
+}
+
+.left {
+    left: -25px;
+    top: 10px;
+    transform: rotate(225deg);
+}
+
+.right {
+    right: -25px;
+    top: 10px;
+    transform: rotate(45deg);
+}
