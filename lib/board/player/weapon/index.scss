@@ -7,24 +7,81 @@
 }
 
 .forward {
-    top: 30px;
-    transform: rotate(135deg);
+    z-index: 101;
+    animation-duration: 200ms;
+    animation-name: swingforward;
+}
+
+@keyframes swingforward {
+  from {
+      top: 15px;
+      left: -5px;
+      transform: rotate(185deg);
+  }
+
+  to {
+      top: 30px;
+      left: 5px;
+      transform: rotate(135deg);
+  }
 }
 
 .backward {
-    top: -22px;
     z-index: 1;
-    transform: rotate(315deg);
+    animation-duration: 200ms;
+    animation-name: swingbackward;
+}
+
+@keyframes swingbackward {
+  from {
+      top: -12px;
+      right: 5px;
+      transform: rotate(265deg);
+  }
+
+  to {
+      top: -22px;
+      right: -5px;
+      transform: rotate(315deg);
+  }
 }
 
 .left {
-    left: -25px;
-    top: 10px;
-    transform: rotate(225deg);
+    z-index: 1;
+    animation-duration: 200ms;
+    animation-name: swingleft;
+}
+
+@keyframes swingleft {
+  from {
+      left: -15px;
+      top: 0px;
+      transform: rotate(275deg);
+  }
+
+  to {
+      left: -20px;
+      top: 10px;
+      transform: rotate(225deg);
+  }
 }
 
 .right {
-    right: -25px;
-    top: 10px;
-    transform: rotate(45deg);
+    z-index: 1;
+    animation-duration: 200ms;
+    animation-name: swingright;
+}
+
+@keyframes swingright {
+  from {
+      right: -15px;
+      top: 0px;
+      transform: rotate(0deg);
+  }
+
+  to {
+      right: -20px;
+      top: 10px;
+      transform: rotate(45deg);
+  }
 }
